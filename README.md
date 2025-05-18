@@ -1,10 +1,19 @@
 # ClaimGuard: Intelligent Healthcare Service Pattern Analysis
 
-## Project Goal <br>
+## 🎯 Project Goal
 
-The goal of this project was to predict Medicare Allowed Amounts by combining structured claim-level data with a semantic understanding of service descriptions. This would enable intelligent analysis of provider behavior and build a foundation for fraud detection, billing optimization, and policy impact analysis in U.S. healthcare.
+The goal of this project was to **predict the Medicare Allowed Amount** using a hybrid modeling approach that combines structured claim-level data with unstructured service descriptions.
+
+By integrating **clinical language models**, **Delta Lake architecture**, and **MLOps practices**, this solution supports:
+
+- Intelligent service categorization  
+- Billing behavior prediction  
+- Fraud detection foundations  
+- Data integrity and auditability at scale  
+
+This system provides a foundation for smarter decision-making and operational efficiency in healthcare claims processing.
+
 ---
-
 ## 🚀 Project Overview
 
 - **Objective**: Predict the average allowed Medicare amount for healthcare services using both structured claim-level data and unstructured HCPCS descriptions.
