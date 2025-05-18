@@ -1,6 +1,7 @@
 # ClaimGuard: Intelligent Healthcare Service Pattern Analysis
-ClaimGuard is an end-to-end machine learning pipeline designed to analyze Medicare Part B claims data, generate semantic embeddings from medical service descriptions, predict billing behavior, and monitor model performance using MLOps best practices.
 
+## Project Goal
+The goal of this project was to predict Medicare Allowed Amounts by combining structured claim-level data with a semantic understanding of service descriptions. This would enable intelligent analysis of provider behavior and build a foundation for fraud detection, billing optimization, and policy impact analysis in U.S. healthcare.
 ---
 
 ## 🚀 Project Overview
@@ -168,4 +169,16 @@ The core objective of this stage was to build a reliable ML pipeline to predict 
 - Extend to classification use cases (e.g., High-cost vs. Preventive care)
 - Automate embedding refresh cycles for new codes
 - Integrate drift detection and retraining triggers in MLflow
+
+---
+## 🎓  What I Learned & Why This Project Matters
+Through **ClaimGuard**, I gained hands-on experience in end-to-end data science and MLOps workflows, including:
+
+- Processing and analyzing large-scale healthcare datasets (9.7M+ rows)
+- Applying NLP techniques (Bio_ClinicalBERT) to derive semantic embeddings from HCPCS descriptions
+- Training interpretable and high-performance models using XGBoost
+- Implementing Delta Lake for scalable, version-controlled storage with update/delete support
+- Applying SHAP for model explainability and feature attribution
+- Logging, tracking, and managing model versions using MLflow and Model Registry
+- Creating real-time prediction pipelines using structured + unstructured inputs
 
