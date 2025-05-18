@@ -175,10 +175,10 @@ The core objective of this stage was to build a reliable ML pipeline to predict 
 Through **ClaimGuard**, I gained hands-on experience in end-to-end data science and MLOps workflows, including:
 
 - Processing and analyzing large-scale healthcare datasets (9.7M+ rows)
-- Applying NLP techniques (Bio_ClinicalBERT) to derive semantic embeddings from HCPCS descriptions
-- Training interpretable and high-performance models using XGBoost
+- Applying NLP techniques **(Bio_ClinicalBERT) to derive semantic embeddings** from HCPCS descriptions
+- Training interpretable and high-performance models using **XGBoost**
 - Implementing Delta Lake for scalable, version-controlled storage with update/delete support
 - Applying SHAP for model explainability and feature attribution
-- Logging, tracking, and managing model versions using MLflow and Model Registry
+- Logging, tracking, and managing model versions using **MLflow and Model Registry**
 - Creating real-time prediction pipelines using structured + unstructured inputs
 
