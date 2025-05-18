@@ -16,7 +16,7 @@ ClaimGuard is an end-to-end machine learning pipeline designed to analyze Medica
 - **Direct API Access**:  
   Easily integrate this dataset programmatically using the following API endpoint:  
   [`https://data.cms.gov/data-api/v1/dataset/31dc2c47-f297-4948-bfb4-075e1bec3a02/data`](https://data.cms.gov/data-api/v1/dataset/31dc2c47-f297-4948-bfb4-075e1bec3a02/data)
-The Medicare Physician & Other Practitioners by Provider and Service dataset provides information on use, payments, and submitted charges organized by National Provider Identifier (NPI), Healthcare Common Procedure Coding System (HCPCS) code, and place of service.
+<br>The Medicare Physician & Other Practitioners by Provider and Service dataset provides information on use, payments, and submitted charges organized by National Provider Identifier (NPI), Healthcare Common Procedure Coding System (HCPCS) code, and place of service.
 ---
 ## 1. Data Preprocessing & Cleaning
 
