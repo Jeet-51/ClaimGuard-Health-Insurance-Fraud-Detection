@@ -1,7 +1,15 @@
 # ClaimGuard: Intelligent Healthcare Service Pattern Analysis
 ![Python](https://img.shields.io/badge/python-3.10-blue)
 ![MLflow](https://img.shields.io/badge/MLflow-enabled-brightgreen)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![PySpark](https://img.shields.io/badge/PySpark-enabled-orange)
+![XGBoost](https://img.shields.io/badge/XGBoost-Model-success)
+![Transformers](https://img.shields.io/badge/HuggingFace-Bio_ClinicalBERT-blueviolet)
+![Delta Lake](https://img.shields.io/badge/Delta%20Lake-Optimized-informational)
+
+![SHAP](https://img.shields.io/badge/SHAP-Explainability-red)
+![ML Pipeline](https://img.shields.io/badge/Pipeline-ML%20End--to--End-blue)
+![Embeddings](https://img.shields.io/badge/NLP-Embeddings-lightgrey)
+![MLOps](https://img.shields.io/badge/MLOps-Practices-important)
 
 ## 🎯 Project Goal
 
