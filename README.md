@@ -1,4 +1,7 @@
 # ClaimGuard: Intelligent Healthcare Service Pattern Analysis
+![Python](https://img.shields.io/badge/python-3.10-blue)
+![MLflow](https://img.shields.io/badge/MLflow-enabled-brightgreen)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## 🎯 Project Goal
 
