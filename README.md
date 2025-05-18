@@ -203,3 +203,9 @@ Through **ClaimGuard**, I gained hands-on experience in end-to-end data science 
 - Logging, tracking, and managing model versions using **MLflow and Model Registry**
 - Creating real-time prediction pipelines using structured + unstructured inputs
 
+---
+## 👨‍💻 Author
+
+**Jeet Patel**  
+Master’s in Data Science, Indiana University Bloomington  
+📫 [LinkedIn](https://www.linkedin.com/in/jeet-rakesh-patel/) | 📧 jeetp5118@gmail.com
