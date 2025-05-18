@@ -114,6 +114,8 @@ The core objective of this stage was to build a reliable ML pipeline to predict 
 
 ### 🧠 Explainability with SHAP
 
+![image](https://github.com/user-attachments/assets/af98b91d-8fde-45ff-949d-899950cdce8d)
+
 - Computed **top 20 feature importances** using XGBoost's built-in gain metric.
 - Used **SHAP explainer plots** to understand how each feature (including embeddings) influenced predictions.
 - Delivered both **global** and **local interpretability**, enhancing trust in model predictions.
