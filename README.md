@@ -1,7 +1,8 @@
 # ClaimGuard: Intelligent Healthcare Service Pattern Analysis
 
 ## Project Goal
-<br>The goal of this project was to predict Medicare Allowed Amounts by combining structured claim-level data with a semantic understanding of service descriptions. This would enable intelligent analysis of provider behavior and build a foundation for fraud detection, billing optimization, and policy impact analysis in U.S. healthcare.
+<br>
+The goal of this project was to predict Medicare Allowed Amounts by combining structured claim-level data with a semantic understanding of service descriptions. This would enable intelligent analysis of provider behavior and build a foundation for fraud detection, billing optimization, and policy impact analysis in U.S. healthcare.
 ---
 
 ## 🚀 Project Overview
