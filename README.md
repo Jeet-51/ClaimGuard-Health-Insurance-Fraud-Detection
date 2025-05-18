@@ -95,4 +95,66 @@ The resulting **Delta table** is now used as the foundational data store for the
 - Model monitoring and retraining pipelines powered by MLflow
 
 ---
+## 🤖 Embedding Generation, Model Training & MLOps (MLflow)
+
+The core objective of this stage was to build a reliable ML pipeline to predict Medicare billing behavior using structured features and semantic embeddings from medical procedure descriptions.
+
+---
+
+### ✅ What We Did
+
+- **Sampled 200k rows** from the cleaned Delta-backed dataset to ensure memory-efficient training.
+- Used **Bio_ClinicalBERT** from Hugging Face to generate 768-dim embeddings from `HCPCS_Description`.
+- Merged **structured features** (e.g., geographic, financial, categorical) with **LLM-based embeddings**.
+- Performed a **train-test split** and trained an **XGBoost Regressor** on the target column: `Average_Medicare_Allowed_Amount`.
+- Evaluated model with an **R² score of 0.95**, validating strong predictive performance.
+- Logged predictions vs. actual values for quick validation and trust-building.
+
+---
+
+### 🧠 Explainability with SHAP
+
+- Computed **top 20 feature importances** using XGBoost's built-in gain metric.
+- Used **SHAP explainer plots** to understand how each feature (including embeddings) influenced predictions.
+- Delivered both **global** and **local interpretability**, enhancing trust in model predictions.
+
+---
+
+### ⚙️ MLOps with MLflow
+
+- Set up **MLflow experiment tracking**, logging:
+  - Hyperparameters (e.g., learning rate, max depth)
+  - Model artifacts
+  - Evaluation metrics (R²)
+- Registered the trained model in the **MLflow Model Registry** for future use.
+- Implemented **real-time prediction pipelines**:
+  - Dynamically built feature dictionaries
+  - Generated fresh BioBERT embeddings
+  - Made predictions using the registered model
+
+---
+
+### 📦 Logged Artifacts & Outputs
+
+- `xgb_claimguard_model.pkl` – Trained XGBoost model
+- `single_prediction.csv` – Output from one prediction sample
+- `prediction_output.csv` – Batch predictions for validation
+- MLflow logs include **metrics, parameters, SHAP plots, and predictions**
+
+---
+
+### 🔁 Why This Pipeline Matters
+
+- Leverages **domain-specific transformer embeddings (BioBERT)** for better context from `HCPCS_Description`.
+- Combines **deep learning with tabular ML** using XGBoost — best of both worlds.
+- MLOps integration ensures the system is **trackable, reproducible, and deployable**.
+- Ideal for **real-world healthcare monitoring systems** where transparency and prediction consistency are essential.
+
+---
+
+### 🚀 What’s Next
+
+- Extend to classification use cases (e.g., High-cost vs. Preventive care)
+- Automate embedding refresh cycles for new codes
+- Integrate drift detection and retraining triggers in MLflow
 
