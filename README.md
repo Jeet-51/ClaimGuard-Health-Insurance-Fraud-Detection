@@ -208,4 +208,4 @@ Through **ClaimGuard**, I gained hands-on experience in end-to-end data science 
 
 **Jeet Patel**  
 Master’s in Data Science, Indiana University Bloomington  
-📫 [LinkedIn](https://www.linkedin.com/in/jeet-rakesh-patel/) | 📧 jeetp5118@gmail.com
+📫 [LinkedIn]([https://www.linkedin.com/in/jeet-rakesh-patel/](https://www.linkedin.com/in/pateljeet22)) | 📧 jeetp5118@gmail.com
