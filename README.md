@@ -14,23 +14,13 @@ ClaimGuard is an end-to-end machine learning pipeline designed to analyze Medica
 
 We began with the **CMS Medicare Part B dataset**, containing over **9.7 million rows** and **28 columns**, including provider details, service information, and billing amounts.
 
-### What We Did
-
-- **Converted to Parquet Format**  
-  Efficient, compressed storage for fast reads/writes and compatibility with PySpark.
-
-- **Renamed Columns**  
-  Made column names consistent and readable for downstream modeling.
-
-- **Handled Null Values**  
+### Preprocessing Steps
+  - **Handled Null Values**  
   Used imputation strategies (e.g., filling with median or constants) to ensure no missing data affected model training.
-
-- **Geographic Simplification**  
+  - **Geographic Simplification**  
   Extracted and simplified ZIP codes and state information to avoid high-cardinality location features.
-
-- **Aggregated Metrics**  
+  - **Aggregated Metrics**  
   Calculated provider-level aggregates like total services, beneficiaries, and statistical measures of cost (mean, std, max).
-
 - **Categorical Encoding**  
   Applied Label Encoding to fields like `Provider_Type`, `Place_Of_Service`, and `Medicare_Participation`.
 
