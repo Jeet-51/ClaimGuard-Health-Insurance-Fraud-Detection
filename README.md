@@ -53,7 +53,18 @@ We began with the **CMS Medicare Part B dataset**, containing over **9.7 million
 - **Financial features** added meaningful variance and predictive power to the model.
 - The cleaned dataset served as a robust foundation for embeddings, model training, and interpretability work ahead.
 ---
+## 🗺️ Geographic Insights: Number of Providers by State
+![image](https://github.com/user-attachments/assets/edb9346a-ba88-4b66-9ca9-ba57225dc89a)
+To better understand provider distribution across the U.S., we visualized the number of providers per state using a choropleth map. This helps identify regions with high or low healthcare access, informing policy and outreach decisions.
 
+### 🧠 Key Takeaways:
+
+- **High-density states** like **California, Texas, Florida, and New York** have the most providers — aligned with their large populations and healthcare demand.
+- **Mid-sized states** such as **Illinois** and **Georgia** serve as regional healthcare hubs.
+- **Rural states** like **Montana**, **Wyoming**, and **Vermont** show significantly fewer providers, indicating potential access challenges.
+- This map supports the need for **targeted healthcare policies** and **strategic resource allocation**.
+
+---
 ## 🧊 Delta Lake & Storage Layer
 
 After preprocessing and cleaning the CMS healthcare dataset, we transitioned the data into a more robust and production-ready format using **Delta Lake**.
