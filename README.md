@@ -54,3 +54,45 @@ We began with the **CMS Medicare Part B dataset**, containing over **9.7 million
 - **Label encoding** ensured compatibility with XGBoost without inflating feature dimensions.
 - **Financial features** added meaningful variance and predictive power to the model.
 - The cleaned dataset served as a robust foundation for embeddings, model training, and interpretability work ahead.
+---
+
+## 🧊 Delta Lake & Storage Layer
+
+After preprocessing and cleaning the CMS healthcare dataset, we transitioned the data into a more robust and production-ready format using **Delta Lake**.
+
+### ✅ What We Did
+
+- **Configured PySpark and Delta Lake** to operate in a scalable, cloud-compatible environment.
+- **Converted cleaned Parquet files to Delta format**, enabling transactional consistency.
+- Ran **aggregations and analytical queries** to understand provider-level billing behaviors.
+- Applied **row-level operations** like `UPDATE` and `DELETE` for data correction and evolution.
+- Enabled **schema evolution** to accommodate new fields without breaking the pipeline.
+- Simulated **time travel queries** for versioned snapshots and rollback testing.
+- Supported **batch appends** of new claim records while maintaining schema integrity.
+
+### 💡 Why This Approach Was Critical
+
+Traditional formats like CSV or plain Parquet do not support ACID transactions, historical versioning, or schema enforcement — all essential for production-grade pipelines.
+
+Delta Lake allows us to:
+- **Update and clean existing data** post-ingestion.
+- **Track changes over time** using data versioning.
+- **Run reliable queries** without data corruption from partial writes.
+
+### 📈 How This Helped the Project
+
+Delta Lake serves as the **single source of truth** for all downstream ML components:
+
+- **Faster I/O** performance for large datasets (9.7M rows).
+- **Reliable auditing and rollback support** via time travel.
+- **Enables clean feature engineering and model retraining** without redundant full reloads.
+
+### 🔗 Project Integration
+
+The resulting **Delta table** is now used as the foundational data store for the next stages:
+- Embedding generation using Transformer-based models (e.g., BioBERT)
+- Feature selection and billing behavior prediction via XGBoost
+- Model monitoring and retraining pipelines powered by MLflow
+
+---
+
